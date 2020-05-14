@@ -1,0 +1,81 @@
+:root {
+    --snow: #fefefe;
+}
+
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.title-small {
+    font-size: .65em;
+}
+
+.text-fixed-carousel {
+    position: absolute;
+    color: var(--snow);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card .live .card-img-overlay .badge {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.card:hover .live .card-img-overlay .badge {
+    opacity: 1;
+}
+.card-img-overlay .badge {
+    opacity: .8;
+    padding: .5em 1em;
+}
+
+.card .card-img {
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.dead {
+    position: relative;
+}
+
+.card .dead .badge {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.formular {
+    border-top: 2px solid black;
+}
+
+footer .nav-link {
+    padding: .3rem 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    .carousel-item {
+        height: 400px;
+    }
+
+    .text-fixed-carousel {
+        font-size: 1.5rem;
+    }
+}
